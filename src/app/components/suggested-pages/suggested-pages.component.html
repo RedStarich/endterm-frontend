@@ -1,0 +1,13 @@
+<div class="suggested-pages">
+    <app-section-header title="Suggested pages" [showSeeAll]="true"></app-section-header>
+    
+    <ul class="pages-list">
+      <li class="page-item" *ngFor="let page of suggestedPages">
+        <img [src]="page.img" alt="Page" class="page-img">
+        <div class="page-info">
+          <h4>{{ page.name }}</h4>
+          <p>{{ page.followers }} following</p>
+        </div>
+      </li>
+    </ul>
+  </div>

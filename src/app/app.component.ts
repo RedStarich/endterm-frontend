@@ -1,13 +1,15 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { HeaderComponent } from './components/layout/header/header.component';
+import { LeftSidebarComponent } from './components/layout/left-sidebar/left-sidebar.component';
 
 @Component({
-  selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet],
+  selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrl: './app.component.scss'
+  styleUrls: ['./app.component.scss'],
+  imports: [HeaderComponent, LeftSidebarComponent]
 })
+
 export class AppComponent {
-  title = 'endterm';
+  title = 'angular-standalone-components';
 }

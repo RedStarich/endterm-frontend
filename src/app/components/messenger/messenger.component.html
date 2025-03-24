@@ -1,0 +1,21 @@
+<div class="messenger-section">
+    <app-section-header title="Messenger" [showAdd]="true"></app-section-header>
+    
+    <app-search-bar></app-search-bar>
+    
+    <ul class="messenger-list">
+      <li class="messenger-item" *ngFor="let contact of contacts">
+        <div class="contact-info">
+          <img [src]="contact.img" alt="Contact" class="contact-img">
+          <div class="contact-details">
+            <h4>{{ contact.name }}</h4>
+            <p>{{ contact.message }}</p>
+          </div>
+        </div>
+        <div class="contact-time">
+          <span>{{ contact.time }}</span>
+          <div class="online-indicator" *ngIf="contact.online"></div>
+        </div>
+      </li>
+    </ul>
+  </div>
