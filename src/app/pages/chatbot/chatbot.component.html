@@ -1,0 +1,13 @@
+<div class="chatbot-container">
+    <input type="text" [(ngModel)]="userInput" placeholder="Enter your question">
+    <p>You typed: {{ userInput }}</p>
+    <button class="chatbot-send" 
+            (click)="sendMessage()" 
+            [disabled]="isLoading">
+        {{ isLoading ? 'Loading...' : 'Send' }}
+    </button>
+    <div>
+        <p>Response:</p>
+        <p>{{geminiResponse}}</p>
+    </div>
+</div>

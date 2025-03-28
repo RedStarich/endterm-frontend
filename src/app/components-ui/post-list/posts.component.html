@@ -1,0 +1,9 @@
+@if(posts){
+   <div class="post-wrapper">
+      @for(post of posts; track post.id){
+         <app-post [post]="post"></app-post>
+      }
+ </div>
+} @else {
+   Loading..
+}

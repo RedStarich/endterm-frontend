@@ -1,0 +1,17 @@
+@if(post){
+<div>
+    <p>{{post.id}}</p>
+    <app-post [post]="post"></app-post>
+    @if(comments && comments.length > 0){
+    <app-comment-section [comments]="comments"></app-comment-section>
+    } @else {
+    <div>
+        <p>Нет комментариев</p>
+    </div>
+    }
+</div>
+} @else {
+<div>
+    <p>Пост не найден</p>
+</div>
+}
