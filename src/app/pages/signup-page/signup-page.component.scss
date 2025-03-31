@@ -23,7 +23,7 @@ body {
 }
 
 // Login container
-.login-container {
+.signup-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -33,7 +33,7 @@ body {
 }
 
 // Login box
-.login-box {
+.signup-box {
     width: 100%;
     max-width: 450px;
     padding: 2.5rem;
@@ -56,7 +56,7 @@ body {
 }
 
 // Login title
-.login-title {
+.signup-title {
     text-align: center;
     color: $primary-color;
     margin-bottom: 2rem;
@@ -76,7 +76,7 @@ body {
 }
 
 // Form styling
-.login-form {
+.signup-form {
     margin-bottom: 1.5rem;
 }
 
@@ -148,7 +148,7 @@ body {
 }
 
 // Login button
-.login-button {
+.signup-button {
     width: 100%;
     padding: 0.875rem;
     background-color: $primary-color;
@@ -172,7 +172,7 @@ body {
 }
 
 // Register link
-.register-link {
+.login-link {
     text-align: center;
     color: $dark-color;
     font-size: 0.9rem;

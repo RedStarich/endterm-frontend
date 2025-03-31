@@ -1,6 +1,79 @@
-.post-wrapper {
+.posts-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    gap: 1rem;
+    gap: 1.5rem;
+    padding: 1rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.forbes-post-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem 1rem;
+}
+
+.forbes-heading {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+    border-bottom: 3px solid #000;
+    padding-bottom: 0.75rem;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.forbes-post-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 2rem;
+}
+
+.forbes-post-card {
+    background-color: #fff;
+    border-bottom: 1px solid #e0e0e0;
+    transition: transform 0.2s;
+    
+    &:hover {
+        transform: translateY(-5px);
+    }
+}
+
+.forbes-loading {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 300px;
+    
+    .loading-text {
+        font-size: 1.2rem;
+        font-style: italic;
+        color: #888;
+    }
+}
+
+@media (max-width: 768px) {
+    .posts-container {
+        padding: 0.5rem;
+        
+        .post-item {
+            padding: 1rem;
+            
+            .post-header {
+                .post-title {
+                    font-size: 1.2rem;
+                }
+            }
+        }
+    }
+    
+    .forbes-post-grid {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .forbes-heading {
+        font-size: 1.5rem;
+        margin-bottom: 1.5rem;
+    }
 }

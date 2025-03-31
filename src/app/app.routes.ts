@@ -6,11 +6,13 @@ import { PostListPageComponent } from './pages/post-list-page/post-list-page.com
 import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PostPageComponent } from './pages/post-page/post-page.component';
+import { SignupPageComponent } from './pages/signup-page/signup-page.component';
 
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
     {path: 'login', component: LoginPageComponent},
+    {path: 'signup', component: SignupPageComponent},
     {path: 'chatbot', component: ChatbotComponent},
     {path: 'posts', component: PostListPageComponent},
     {path: 'posts/:slug', component: PostPageComponent},

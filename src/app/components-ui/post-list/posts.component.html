@@ -1,9 +1,16 @@
 @if(posts){
-   <div class="post-wrapper">
-      @for(post of posts; track post.id){
-         <app-post [post]="post"></app-post>
-      }
- </div>
+   <div class="forbes-post-container">
+      <h2 class="forbes-heading">Latest Stories</h2>
+      <div class="forbes-post-grid">
+         @for(post of posts; track post.id){
+            <div class="forbes-post-card">
+               <app-post [post]="post"></app-post>
+            </div>
+         }
+      </div>
+   </div>
 } @else {
-   Loading..
+   <div class="forbes-loading">
+      <span class="loading-text">Loading articles...</span>
+   </div>
 }
