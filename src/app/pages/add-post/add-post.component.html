@@ -1,0 +1,31 @@
+<form class="add-post-form" (ngSubmit)="onUpload()">
+    <div class="form-group">
+        <label class="form-label" for="id">ID:</label>
+        <input class="form-input" type="number" id="id" name="id" required [(ngModel)]="id" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="title">Title:</label>
+        <input class="form-input" type="text" id="title" name="title" required [(ngModel)]="title" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="description">Description:</label>
+        <textarea class="form-textarea" id="description" name="description" rows="6" required [(ngModel)]="description"></textarea>
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="author">Author:</label>
+        <input class="form-input" type="text" id="author" name="author" required [(ngModel)]="author" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="date">Date:</label>
+        <input class="form-input" type="datetime-local" id="date" name="date" required [(ngModel)]="date" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="tags">Tags (comma separated):</label>
+        <input class="form-input" type="text" id="tags" name="tags" required [(ngModel)]="tags" />
+    </div>
+    <div class="form-group">
+        <label class="form-label" for="imageUrl">Image URL:</label>
+        <input class="form-input" type="url" id="imageUrl" name="imageUrl" required [(ngModel)]="imageUrl" />
+    </div>
+    <button class="form-button" type="submit">Upload Post</button>
+</form>

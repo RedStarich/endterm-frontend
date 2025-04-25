@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { RouterModule } from '@angular/router';
 import { PostPageComponent } from './pages/post-page/post-page.component';
 import { SignupPageComponent } from './pages/signup-page/signup-page.component';
-
+import { AddPostComponent } from './pages/add-post/add-post.component';
 
 export const routes: Routes = [
     {path: '', component: HomeComponent},
@@ -15,7 +15,8 @@ export const routes: Routes = [
     {path: 'signup', component: SignupPageComponent},
     {path: 'chatbot', component: ChatbotComponent},
     {path: 'posts', component: PostListPageComponent},
-    {path: 'posts/:slug', component: PostPageComponent},
+    {path: 'posts/:slug', component: PostPageComponent},    
+    {path: 'add-post', component: AddPostComponent},
 ];
 
 @NgModule({
